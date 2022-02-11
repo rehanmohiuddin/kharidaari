@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://kashish-ui.netlify.app/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Kharidari</title>
+  </head>
+  <body>
+    <div class="container-root">
+      <nav class="nav-xl kash-flex kash-bg-white kash-align-center">
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <a href="/"> <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4></a>
+          <input
+            class="kash-input kash-bg-gray"
+            id="kash-input"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-cart-plus"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+      <nav class="nav-sm kash-flex kash-bg-white kash-align-center">
+        <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4>
+        <i id="nav-bar-icon" class="fa fa-bars"></i>
+        <div
+          id="nav-sm-container"
+          class="nav-sm-container kash-flex kash-justify-center kash-align-center kash-gap-3"
+        >
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-cart-plus"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+
+      <div class="kash-container kash-flex kash-gap-2">
+        <aside id="filter-container" class="sidebar kash-p">
+          <i class="fa fa-window-close"></i>
+          <section
+            class="filter-header kash-flex kash-align-center kash-between"
+          >
+            <div class="kash-h5 kash-text-bold">Filter</div>
+            <a class="kash-subtitle">Clear</a>
+          </section>
+          <section class="price-container kash-flex-col kash-gap">
+            <div class="kash-h5 kash-text-bold">Price</div>
+            <div class="kash-flex-col kash-gap-2">
+              <div class="price-rating-values kash-flex kash-between">
+                <div class="kash-text-light">50</div>
+                <div class="kash-text-light">500</div>
+                <div class="kash-text-light">2500</div>
+              </div>
+              <input type="range" />
+            </div>
+          </section>
+          <section class="price-container kash-flex-col kash-gap">
+            <div class="kash-h5 kash-text-bold">Category</div>
+            <ul class="kash-flex-col kash-gap">
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="checkbox" checked />
+                <div>Men's Clothing</div>
+              </li>
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="checkbox" checked />
+                <div>WoMen's Clothing</div>
+              </li>
+            </ul>
+          </section>
+          <section class="price-container kash-flex-col kash-gap">
+            <div class="kash-h5 kash-text-bold">Rating</div>
+            <ul class="kash-flex-col kash-gap">
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" checked />
+                <div class="kash-subtitle kash-m-0">4 Stars & above</div>
+              </li>
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" />
+                <div class="kash-subtitle kash-m-0">3 Stars & above</div>
+              </li>
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" />
+                <div class="kash-subtitle kash-m-0">2 Stars & above</div>
+              </li>
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" />
+                <div class="kash-subtitle kash-m-0">1 Stars & above</div>
+              </li>
+            </ul>
+          </section>
+          <section class="price-container kash-flex-col kash-gap">
+            <div class="kash-h5 kash-text-bold">Sort By</div>
+            <ul class="kash-flex-col">
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" checked />
+                <div class="kash-subtitle kash-m-0">Price - Low to High</div>
+              </li>
+              <li class="kash-flex kash-align-center kash-gap">
+                <input type="radio" />
+                <div class="kash-subtitle kash-m-0">Price - High to Low</div>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <div class="products-container kash-p">
+          <div
+            class="products-container-header kash-flex kash-align-center kash-gap"
+          >
+            <div class="kash-flex kash-align-center kash-gap">
+              <div class="kash-h5 kash-text-bold">Showing All Products</div>
+              <div class="kash-subtitle">( Showing 20 products )</div>
+            </div>
+            <i id="filter-btn" class="fa fa-filter"></i>
+          </div>
+          <div class="products-list-container">
+            <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m-0">
+              <div class="kash-card-upper kash-flex kash-gap">
+                <img
+                  class="product-image"
+                  src="../Assets/Images/bao-bao-GREEBEtyR9Y-unsplash.jpg"
+                />
+                <div class="kash-m-3 kash-w-full kash-relative">
+                  <div class="kash-h5">Men Premium Jacket</div>
+                  <div class="kash-flex kash-gap-2">
+                    <p class="kash-h5 kash-text-bold">₹2000</p>
+                    <p class="kash-h5 kash-text-light text-cross">₹4000</p>
+                  </div>
+                  <p class="kash-subtitle kash-text-light">50% off</p>
+                  <div
+                    class="kash-flex-col kash-gap kash-justify-end kash-mt kash-absolute bottom kash-w-full"
+                  >
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-contained kash-font-bold kash-bg-gray kash-text-white btn-bg-red"
+                    >
+                      Add To Cart
+                    </button>
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-outlined kash-font-bold kash-bg-gray kash-text-white btn-bg-white"
+                    >
+                      Remove From Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m-0">
+              <div class="kash-card-upper kash-flex kash-gap">
+                <img
+                  class="product-image"
+                  src="../Assets/Images//cleyton-ewerton-U_z1WoDoISA-unsplash.jpg"
+                />
+                <div class="kash-m-3 kash-w-full kash-relative">
+                  <div class="kash-h5">Men Premium Jacket</div>
+                  <div class="kash-flex kash-gap-2">
+                    <p class="kash-h5 kash-text-bold">₹2000</p>
+                    <p class="kash-h5 kash-text-light text-cross">₹4000</p>
+                  </div>
+                  <p class="kash-subtitle kash-text-light">50% off</p>
+                  <div
+                    class="kash-flex-col kash-gap kash-justify-end kash-mt kash-absolute bottom kash-w-full"
+                  >
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-contained kash-font-bold kash-bg-gray kash-text-white btn-bg-red"
+                    >
+                      Add To Cart
+                    </button>
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-outlined kash-font-bold kash-bg-gray kash-text-white btn-bg-white"
+                    >
+                      Remove From Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m-0">
+              <div class="kash-card-upper kash-flex kash-gap">
+                <img
+                  class="product-image"
+                  src="../Assets/Images/man-5923039_1920.jpg"
+                />
+                <div class="kash-m-3 kash-w-full kash-relative">
+                  <div class="kash-h5">Men Premium Jacket</div>
+                  <div class="kash-flex kash-gap-2">
+                    <p class="kash-h5 kash-text-bold">₹2000</p>
+                    <p class="kash-h5 kash-text-light text-cross">₹4000</p>
+                  </div>
+                  <p class="kash-subtitle kash-text-light">50% off</p>
+                  <div
+                    class="kash-flex-col kash-gap kash-justify-end kash-mt kash-absolute bottom kash-w-full"
+                  >
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-contained kash-font-bold kash-bg-gray kash-text-white btn-bg-red"
+                    >
+                      Add To Cart
+                    </button>
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-outlined kash-font-bold kash-bg-gray kash-text-white btn-bg-white"
+                    >
+                      Remove From Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m-0">
+              <div class="kash-card-upper kash-flex kash-gap">
+                <img
+                  class="product-image"
+                  src="../Assets/Images/meysam-jarahkar-NMYG69BG_Jg-unsplash.jpg"
+                />
+                <div class="kash-m-3 kash-w-full kash-relative">
+                  <div class="kash-h5">Men Premium Jacket</div>
+                  <div class="kash-flex kash-gap-2">
+                    <p class="kash-h5 kash-text-bold">₹2000</p>
+                    <p class="kash-h5 kash-text-light text-cross">₹4000</p>
+                  </div>
+                  <p class="kash-subtitle kash-text-light">50% off</p>
+                  <div
+                    class="kash-flex-col kash-gap kash-justify-end kash-mt kash-absolute bottom kash-w-full"
+                  >
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-contained kash-font-bold kash-bg-gray kash-text-white btn-bg-red"
+                    >
+                      Add To Cart
+                    </button>
+                    <button
+                      class="kash-card-btn kash-btn kash-btn-outlined kash-font-bold kash-bg-gray kash-text-white btn-bg-white"
+                    >
+                      Remove From Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- <div class="kash-h5 kash-text-bold">KHARIDAARI TECH PVT LTD</div> -->
+      <div class="footer-top kash-flex">
+        <ul>
+          <div class="kash-h5">ABOUT</div>
+          <li>
+            <a class="kash-subtitle">Contact Us</a>
+          </li>
+          <li><a class="kash-subtitle">About Us</a></li>
+          <li><a class="kash-subtitle">Careers</a></li>
+          <li><a class="kash-subtitle" href="#">Company Stories</a></li>
+          <li><a class="kash-subtitle" href="#">Press</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Corporate Information</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">HELP</div>
+          <li>
+            <a class="kash-subtitle">Payments</a>
+          </li>
+          <li><a class="kash-subtitle">Shipping</a></li>
+          <li><a class="kash-subtitle" href="#">Cancellation & Returns</a></li>
+          <li><a class="kash-subtitle" href="#">FAQ</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Report Infringement</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">POLICY</div>
+          <li>
+            <a class="kash-subtitle">Return Policy</a>
+          </li>
+          <li><a class="kash-subtitle">Terms Of Use</a></li>
+          <li><a class="kash-subtitle" href="#">Security</a></li>
+          <li><a class="kash-subtitle" href="#">Privacy</a></li>
+          <li><a class="kash-subtitle" href="#">Sitemap</a></li>
+          <li><a class="kash-subtitle" href="#">EPR Compliance</a></li>
+        </ul>
+
+        <ul>
+          <div class="kash-h5">SOCIAL</div>
+          <li>
+            <a class="kash-subtitle">Facebook</a>
+          </li>
+          <li><a class="kash-subtitle">Twitter</a></li>
+          <li><a class="kash-subtitle" href="#">Youtube</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">Mail Us:</div>
+          <div>
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India
+          </div>
+        </ul>
+        <ul>
+          <div class="kash-h5">Registered Office:</div>
+          <div class="kash-text-md">
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107
+            Telephone:
+            <a
+              class="a"
+              href="tel:1800
+                202 9898"
+              >1800 202 9898</a
+            >
+          </div>
+        </ul>
+      </div>
+      <div class="footer-bottom kash-text-center kash-p">
+        © 2001-2021 Kharidari.com
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

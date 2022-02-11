@@ -4,7 +4,260 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://kashish-ui.netlify.app/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Kharidari</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container-root">
+      <nav class="nav-xl kash-flex kash-bg-white kash-align-center">
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <a href="/"> <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4></a>
+          <input
+            class="kash-input kash-bg-gray"
+            id="kash-input"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-cart-plus"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+      <nav class="nav-sm kash-flex kash-bg-white kash-align-center">
+        <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4>
+        <i id="nav-bar-icon" class="fa fa-bars"></i>
+        <div
+          id="nav-sm-container"
+          class="nav-sm-container kash-flex kash-justify-center kash-align-center kash-gap-3"
+        >
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-cart-plus"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+      <div class="kash-container kash-flex kash-flex-col">
+        <div
+          class="carousel kash-flex-col kash-align-center kash-bg-light-gray"
+          id="carousel"
+        >
+          <img
+            class="carousel-img"
+            id="carousel-img"
+            src="./Assets/Images/e7794138694a2058.jpg"
+          />
+          <div
+            class="kash-img-index kash-flex kash-align-center kash-gap kash-p"
+          >
+            <div id="carousel-img-0" class="carousel-btn"></div>
+            <div id="carousel-img-1" class="carousel-btn"></div>
+            <div id="carousel-img-2" class="carousel-btn"></div>
+            <div id="carousel-img-3" class="carousel-btn"></div>
+            <div id="carousel-img-4" class="carousel-btn"></div>
+          </div>
+        </div>
+        <div
+          class="home-container kash-bg-white trending-container kash-flex-col kash-align-center kash-justify-center kash-p kash-gap-2"
+        >
+          <h4 class="kash-h4 kash-pt kash-text-center">New Collections</h4>
+          <div
+            class="arrivals-container kash-flex kash-align-center kash-justify-center"
+          >
+            <a href="./Products/index.html">
+              <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m">
+                <div class="kash-card-upper kash-flex kash-gap">
+                  <img
+                    class="img-horizontal-card"
+                    src="./Assets/Images/eye-speak-CGyur4w8qKo-unsplash.jpg"
+                  />
+                  <div class="kash-m">
+                    <p class="kash-subtitle kash-text-light">New Arrivals</p>
+                    <div class="kash-h5">Summer Collection</div>
+                    <div
+                      class="kash-flex kash-gap kash-justify-end kash-mt card-desc"
+                    >
+                      <p class="kash-subtitle kash-text-light">
+                        Check out our best winter collection <br />
+                        to stay warm in style this season
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./Products/index.html">
+              <div class="kash-card kash-border-sm kash-flex kash-p-0 kash-m">
+                <div class="kash-card-upper kash-flex kash-gap">
+                  <img
+                    class="img-horizontal-card"
+                    src="./Assets/Images/photo-1546998590-6a6195049fa7.jpg"
+                  />
+                  <div class="kash-m">
+                    <p class="kash-subtitle kash-text-light">New Arrivals</p>
+                    <div class="kash-h5">Summer Collection</div>
+                    <div
+                      class="kash-flex kash-gap kash-justify-end kash-mt card-desc"
+                    >
+                      <p class="kash-subtitle kash-text-light">
+                        Check out our best winter collection <br />
+                        to stay warm in style this season
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="home-container kash-flex kash-align-center kash-justify-center kash-p kash-gap-2"
+        >
+          <img class="banner-img" src="./Assets/Images/28bd10243125450e.jpg" />
+          <img class="banner-img" src="./Assets/Images/0ea5db73aeeb9296.jpg" />
+          <img class="banner-img" src="./Assets/Images/2d86c8d4f37e8af3.jpg" />
+        </div>
+        <div
+          class="home-container kash-bg-white trending-container kash-flex-col kash-align-center kash-justify-center kash-p kash-gap-2"
+        >
+          <div class="trending-header kash-justify-start">
+            <h4 class="kash-h4 kash-text-bold kash-text-left">Categories</h4>
+          </div>
+          <div class="kash-category-container kash-flex kash-gap-2">
+            <div class="trending-card">
+              <img
+                src="./Assets/Images/pro-church-media-A77QfVfNA8Y-unsplash.jpg"
+              />
+              <div class="kash-h5 kash-p">T-shirt</div>
+            </div>
+            <div class="trending-card">
+              <img src="./Assets/Images/pole-3592608__340.webp" />
+              <div class="kash-h5 kash-p">Casuals</div>
+            </div>
+            <div class="trending-card">
+              <img src="./Assets/Images/istockphoto-1189303518-612x612.jpg" />
+              <div class="kash-h5 kash-p">Formal's</div>
+            </div>
+            <div class="trending-card">
+              <img src="./Assets/Images/616768d3d1273f15b69fd4f6d9f0229e.jpg" />
+              <div class="kash-h5 kash-p">Kurtas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top kash-flex">
+        <ul>
+          <div class="kash-h5">ABOUT</div>
+          <li>
+            <a class="kash-subtitle">Contact Us</a>
+          </li>
+          <li><a class="kash-subtitle">About Us</a></li>
+          <li><a class="kash-subtitle">Careers</a></li>
+          <li><a class="kash-subtitle" href="#">Company Stories</a></li>
+          <li><a class="kash-subtitle" href="#">Press</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Corporate Information</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">HELP</div>
+          <li>
+            <a class="kash-subtitle">Payments</a>
+          </li>
+          <li><a class="kash-subtitle">Shipping</a></li>
+          <li><a class="kash-subtitle" href="#">Cancellation & Returns</a></li>
+          <li><a class="kash-subtitle" href="#">FAQ</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Report Infringement</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">POLICY</div>
+          <li>
+            <a class="kash-subtitle">Return Policy</a>
+          </li>
+          <li><a class="kash-subtitle">Terms Of Use</a></li>
+          <li><a class="kash-subtitle" href="#">Security</a></li>
+          <li><a class="kash-subtitle" href="#">Privacy</a></li>
+          <li><a class="kash-subtitle" href="#">Sitemap</a></li>
+          <li><a class="kash-subtitle" href="#">EPR Compliance</a></li>
+        </ul>
+
+        <ul>
+          <div class="kash-h5">SOCIAL</div>
+          <li>
+            <a class="kash-subtitle">Facebook</a>
+          </li>
+          <li><a class="kash-subtitle">Twitter</a></li>
+          <li><a class="kash-subtitle" href="#">Youtube</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">Mail Us:</div>
+          <div>
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India
+          </div>
+        </ul>
+        <ul>
+          <div class="kash-h5">Registered Office:</div>
+          <div class="kash-text-md">
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107
+            Telephone:
+            <a
+              class="a"
+              href="tel:1800
+              202 9898"
+              >1800 202 9898</a
+            >
+          </div>
+        </ul>
+      </div>
+      <div class="footer-bottom kash-text-center kash-p">
+        © 2001-2021 Kharidari.com
+      </div>
+    </footer>
+    <script>
+      const carousel_img = document.getElementById("carousel-img");
+      const images = [
+        "e7794138694a2058.jpg",
+        "1f4b8cabe98448eb.jpg",
+        "3a7f2c936f8fff7c.jpg",
+        "c3dc664f-41cf-408c-8932-c35648d92bc21644236787840-Kurtas_Dk.webp",
+        "3a7f2c936f8fff7c.jpg",
+      ];
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      let Ind = 0,
+        prevInd = 0;
+      setInterval(() => {
+        const num = Ind;
+        carousel_img.src = "./Assets/Images/" + images[num];
+        prevInd = Ind;
+        Ind = Ind >= 4 ? 0 : Ind + 1;
+        document
+          .getElementById("carousel-img-" + Ind)
+          .classList.add("carousel-btn-clicked");
+        document
+          .getElementById("carousel-img-" + prevInd)
+          .classList.remove("carousel-btn-clicked");
+      }, 2000);
+      const navBarIcon = document.getElementById("nav-bar-icon");
+      const navContainer = document.getElementById("nav-sm-container");
+      navBarIcon.onclick = () =>
+        (navContainer.style.display =
+          navContainer.style.display === "block" ? "none" : "flex");
+    </script>
+  </body>
 </html>
