@@ -1,0 +1,44 @@
+.kash-card-badge {
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem var(--gray);
+  border-radius: 1rem;
+  width: 1rem;
+  height: 1rem;
+  align-items: center;
+  right: 1rem;
+  padding: 0.3rem;
+  justify-content: center;
+  top: 1rem;
+}
+.kash-card-badge > i {
+  color: var(--dark-red);
+}
+.whishlist-card-img {
+  width: 100%;
+}
+
+.whishlist-card {
+  width: 14vw !important;
+  height: 100%;
+}
+
+.text-full {
+  white-space: nowrap;
+  padding: 0.5rem;
+}
+.kash-wishlist-btn {
+  border-radius: 0;
+}
+
+.whishlist-container {
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 500px) {
+  .whishlist-container {
+    flex-direction: column;
+  }
+
+  .whishlist-card {
+    width: 80% !important;
+    height: 100%;
+  }
+}

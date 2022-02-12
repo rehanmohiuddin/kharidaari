@@ -1,4 +1,6 @@
 @import url("./Products/index.css");
+@import url("./Cart/index.css");
+@import url("./WishList/index.css");
 
 *,
 *::after,
