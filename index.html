@@ -26,9 +26,14 @@
           />
         </div>
         <div class="kash-flex kash-align-center kash-gap-3">
-          <i class="fa fa-heart"></i>
-          <a href="./Cart/index.html"><i class="fa fa-cart-plus"></i></a>
-          <a>Login</a>
+          <i onclick="redirect('/WishList')" class="fa fa-heart"></i>
+          <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
+          <button
+            onclick="redirect('/Login')"
+            class="kash-btn kash-btn-contained kash-bg-gray"
+          >
+            Login
+          </button>
         </div>
       </nav>
       <nav class="nav-sm kash-flex kash-bg-white kash-align-center">
@@ -38,9 +43,14 @@
           id="nav-sm-container"
           class="nav-sm-container kash-flex kash-justify-center kash-align-center kash-gap-3"
         >
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-cart-plus"></i>
-          <a>Login</a>
+          <i onclick="redirect('/WishList')" class="fa fa-heart"></i>
+          <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
+          <button
+            onclick="redirect('/Login')"
+            class="kash-btn kash-btn-contained kash-bg-gray"
+          >
+            Login
+          </button>
         </div>
       </nav>
       <div class="kash-container kash-flex kash-flex-col">
@@ -225,39 +235,8 @@
         © 2001-2021 Kharidari.com
       </div>
     </footer>
-    <script>
-      const carousel_img = document.getElementById("carousel-img");
-      const images = [
-        "e7794138694a2058.jpg",
-        "1f4b8cabe98448eb.jpg",
-        "3a7f2c936f8fff7c.jpg",
-        "c3dc664f-41cf-408c-8932-c35648d92bc21644236787840-Kurtas_Dk.webp",
-        "3a7f2c936f8fff7c.jpg",
-      ];
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      let Ind = 0,
-        prevInd = 0;
-      setInterval(() => {
-        const num = Ind;
-        carousel_img.src = "./Assets/Images/" + images[num];
-        prevInd = Ind;
-        Ind = Ind >= 4 ? 0 : Ind + 1;
-        document
-          .getElementById("carousel-img-" + Ind)
-          .classList.add("carousel-btn-clicked");
-        document
-          .getElementById("carousel-img-" + prevInd)
-          .classList.remove("carousel-btn-clicked");
-      }, 2000);
-      const navBarIcon = document.getElementById("nav-bar-icon");
-      const navContainer = document.getElementById("nav-sm-container");
-      navBarIcon.onclick = () =>
-        (navContainer.style.display =
-          navContainer.style.display === "block" ? "none" : "flex");
-    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/carsouel.js"></script>
+    <script src="./js/redirect.js"></script>
   </body>
 </html>

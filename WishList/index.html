@@ -29,7 +29,12 @@
         <div class="kash-flex kash-align-center kash-gap-3">
           <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
           <i onclick="redirect('/')" class="fa fa-home"></i>
-          <a>Login</a>
+          <button
+            onclick="redirect('/Login')"
+            class="kash-btn kash-btn-contained kash-bg-gray"
+          >
+            Login
+          </button>
         </div>
       </nav>
       <nav class="nav-sm kash-flex kash-bg-white kash-align-center">
@@ -41,7 +46,12 @@
         >
           <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
           <i onclick="redirect('/')" class="fa fa-home"></i>
-          <a>Login</a>
+          <button
+            onclick="redirect('/Login')"
+            class="kash-btn kash-btn-contained kash-bg-gray"
+          >
+            Login
+          </button>
         </div>
       </nav>
 
@@ -275,7 +285,7 @@
         © 2001-2021 Kharidari.com
       </div>
     </footer>
-    <script src="../js/index.js"></script>
+    <script src="../js/redirect.js"></script>
     <script>
       const redirect = (route) => (window.location.href = route);
     </script>
