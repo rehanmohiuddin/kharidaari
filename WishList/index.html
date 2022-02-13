@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://kashish-ui.netlify.app/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>WishList</title>
+  </head>
+  <body>
+    <div class="container-root">
+      <nav class="nav-xl kash-flex kash-bg-white kash-align-center">
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <a href="/"> <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4></a>
+          <input
+            class="kash-input kash-bg-gray"
+            id="kash-input"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="kash-flex kash-align-center kash-gap-3">
+          <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
+          <i onclick="redirect('/')" class="fa fa-home"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+      <nav class="nav-sm kash-flex kash-bg-white kash-align-center">
+        <h4 class="kash-h4 kash-text-bold">KHARIDAARI</h4>
+        <i id="nav-bar-icon" class="fa fa-bars"></i>
+        <div
+          id="nav-sm-container"
+          class="nav-sm-container kash-flex kash-justify-center kash-align-center kash-gap-3"
+        >
+          <i onclick="redirect('/Cart')" class="fa fa-cart-plus"></i>
+          <i onclick="redirect('/')" class="fa fa-home"></i>
+          <a>Login</a>
+        </div>
+      </nav>
+
+      <div
+        class="cart-container kash-container kash-bg-white kash-flex-col kash-gap-2"
+      >
+        <div class="cart-heading kash-h4 kash-text-center kash-p">
+          My Wishlist
+        </div>
+        <div
+          class="whishlist-container kash-flex kash-align-center kash-justify-center"
+        >
+          <div
+            class="whishlist-card kash-border-sm kash-card kash-flex kash-flex-col kash-p-0 kash-m card-row kash-card-max-w kash-shadow-dark"
+          >
+            <div class="kash-card-upper kash-flex kash-gap">
+              <div
+                class="kash-card-badge kash-flex kash-bg-white kash-absolute kash-subtitle"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <img
+                alt="bao-bao-GREEBEtyR9Y"
+                src="../Assets/Images/bao-bao-GREEBEtyR9Y-unsplash.jpg"
+                class="whishlist-card-img kash-card-max-w"
+              />
+            </div>
+
+            <div
+              class="text-full kash-subtitle kash-text-center kash-text-bold kast-m"
+            >
+              Men Premium Jacket
+            </div>
+            <p class="kash-h5 kash-text-bold kash-text-center">₹2000</p>
+
+            <button
+              class="kash-wishlist-btn kash-card-btn kash-bg-gray kash-font-bold kash-bg-gray kash-text-white kash-w-full"
+            >
+              ORDER NOW
+            </button>
+          </div>
+          <div
+            class="whishlist-card kash-border-sm kash-card kash-flex kash-flex-col kash-p-0 kash-m card-row kash-card-max-w kash-shadow-dark"
+          >
+            <div class="kash-card-upper kash-flex kash-gap">
+              <div
+                class="kash-card-badge kash-flex kash-bg-white kash-absolute kash-subtitle"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <img
+                alt="anomaly-WWesmHEgXDs"
+                src="../Assets/Images/anomaly-WWesmHEgXDs-unsplash.jpg"
+                class="whishlist-card-img kash-card-max-w"
+              />
+            </div>
+
+            <div
+              class="text-full kash-subtitle kash-text-center kash-text-bold kast-m"
+            >
+              Men Premium Jacket
+            </div>
+            <p class="kash-h5 kash-text-bold kash-text-center">₹2000</p>
+
+            <button
+              class="kash-wishlist-btn kash-card-btn kash-bg-gray kash-font-bold kash-bg-gray kash-text-white kash-w-full"
+            >
+              ORDER NOW
+            </button>
+          </div>
+          <div
+            class="whishlist-card kash-border-sm kash-card kash-flex kash-flex-col kash-p-0 kash-m card-row kash-card-max-w kash-shadow-dark"
+          >
+            <div class="kash-card-upper kash-flex kash-gap">
+              <div
+                class="kash-card-badge kash-flex kash-bg-white kash-absolute kash-subtitle"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <img
+                alt="meysam-jarahkar-NMYG69BG"
+                src="../Assets/Images/meysam-jarahkar-NMYG69BG_Jg-unsplash.jpg"
+                class="whishlist-card-img kash-card-max-w"
+              />
+            </div>
+
+            <div
+              class="text-full kash-subtitle kash-text-center kash-text-bold kast-m"
+            >
+              Men Premium Jacket
+            </div>
+            <p class="kash-h5 kash-text-bold kash-text-center">₹2000</p>
+
+            <button
+              class="kash-wishlist-btn kash-card-btn kash-bg-gray kash-font-bold kash-bg-gray kash-text-white kash-w-full"
+            >
+              ORDER NOW
+            </button>
+          </div>
+          <div
+            class="whishlist-card kash-border-sm kash-card kash-flex kash-flex-col kash-p-0 kash-m card-row kash-card-max-w kash-shadow-dark"
+          >
+            <div class="kash-card-upper kash-flex kash-gap">
+              <div
+                class="kash-card-badge kash-flex kash-bg-white kash-absolute kash-subtitle"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <img
+                alt="man-5923039"
+                src="../Assets/Images/man-5923039_1920.jpg"
+                class="whishlist-card-img kash-card-max-w"
+              />
+            </div>
+
+            <div
+              class="text-full kash-subtitle kash-text-center kash-text-bold kast-m"
+            >
+              Men Premium Jacket
+            </div>
+            <p class="kash-h5 kash-text-bold kash-text-center">₹2000</p>
+
+            <button
+              class="kash-wishlist-btn kash-card-btn kash-bg-gray kash-font-bold kash-bg-gray kash-text-white kash-w-full"
+            >
+              ORDER NOW
+            </button>
+          </div>
+          <div
+            class="whishlist-card kash-border-sm kash-card kash-flex kash-flex-col kash-p-0 kash-m card-row kash-card-max-w kash-shadow-dark"
+          >
+            <div class="kash-card-upper kash-flex kash-gap">
+              <div
+                class="kash-card-badge kash-flex kash-bg-white kash-absolute kash-subtitle"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <img
+                alt="xl-denim-001-darkblue-united-club-original"
+                src="../Assets/Images/xl-denim-001-darkblue-united-club-original-imafwfkqrmhygh4m.jpeg"
+                class="whishlist-card-img kash-card-max-w"
+              />
+            </div>
+
+            <div
+              class="text-full kash-subtitle kash-text-center kash-text-bold kast-m"
+            >
+              Men Premium Jacket
+            </div>
+            <p class="kash-h5 kash-text-bold kash-text-center">₹2000</p>
+
+            <button
+              class="kash-wishlist-btn kash-card-btn kash-bg-gray kash-font-bold kash-bg-gray kash-text-white kash-w-full"
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top kash-flex">
+        <ul>
+          <div class="kash-h5">ABOUT</div>
+          <li>
+            <a class="kash-subtitle">Contact Us</a>
+          </li>
+          <li><a class="kash-subtitle">About Us</a></li>
+          <li><a class="kash-subtitle">Careers</a></li>
+          <li><a class="kash-subtitle" href="#">Company Stories</a></li>
+          <li><a class="kash-subtitle" href="#">Press</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Corporate Information</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">HELP</div>
+          <li>
+            <a class="kash-subtitle">Payments</a>
+          </li>
+          <li><a class="kash-subtitle">Shipping</a></li>
+          <li><a class="kash-subtitle" href="#">Cancellation & Returns</a></li>
+          <li><a class="kash-subtitle" href="#">FAQ</a></li>
+          <li><a class="kash-subtitle" href="#">Company Wholesale</a></li>
+          <li><a class="kash-subtitle" href="#">Report Infringement</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">POLICY</div>
+          <li>
+            <a class="kash-subtitle">Return Policy</a>
+          </li>
+          <li><a class="kash-subtitle">Terms Of Use</a></li>
+          <li><a class="kash-subtitle" href="#">Security</a></li>
+          <li><a class="kash-subtitle" href="#">Privacy</a></li>
+          <li><a class="kash-subtitle" href="#">Sitemap</a></li>
+          <li><a class="kash-subtitle" href="#">EPR Compliance</a></li>
+        </ul>
+
+        <ul>
+          <div class="kash-h5">SOCIAL</div>
+          <li>
+            <a class="kash-subtitle">Facebook</a>
+          </li>
+          <li><a class="kash-subtitle">Twitter</a></li>
+          <li><a class="kash-subtitle" href="#">Youtube</a></li>
+        </ul>
+        <ul>
+          <div class="kash-h5">Mail Us:</div>
+          <div>
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India
+          </div>
+        </ul>
+        <ul>
+          <div class="kash-h5">Registered Office:</div>
+          <div class="kash-text-md">
+            Kharidari Private Limited, Buildings Alyssa, Begonia & Clove Embassy
+            Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107
+            Telephone:
+            <a
+              class="a"
+              href="tel:1800
+                  202 9898"
+              >1800 202 9898</a
+            >
+          </div>
+        </ul>
+      </div>
+      <div class="footer-bottom kash-text-center kash-p">
+        © 2001-2021 Kharidari.com
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+    <script>
+      const redirect = (route) => (window.location.href = route);
+    </script>
+  </body>
+</html>
