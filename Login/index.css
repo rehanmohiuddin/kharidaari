@@ -1,0 +1,40 @@
+.login-container {
+  margin: 5rem 30rem 5rem 30rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+form > fieldset {
+  width: 80% !important;
+  margin-top: calc(1 * var(--margin));
+}
+form > fieldset > input {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kash-password-action {
+  width: 80%;
+}
+
+.login-btn {
+  background-color: var(--dark-gray) !important;
+  width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+  .login-container {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+}
